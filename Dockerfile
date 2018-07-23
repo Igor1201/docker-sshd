@@ -10,5 +10,3 @@ RUN sed -ri 's/^#?ChallengeResponseAuthentication\s+.*/ChallengeResponseAuthenti
 
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-CMD ["/usr/sbin/sshd", "-D", "-p", "10022"]
